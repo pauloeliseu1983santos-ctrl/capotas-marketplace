@@ -24,10 +24,18 @@ automotivos) — Next.js + Supabase + Mercado Pago Marketplace.
 - [ ] Upload de fotos/vídeo (Supabase Storage) — próximo
 - [ ] Página do anúncio individual, favoritos, produtos relacionados
 
+## Status: Fase 3 em andamento (Fotos + Checkout + Split de Pagamento)
+
+- [x] Upload de fotos de produto (Supabase Storage, até 20 por anúncio)
+- [x] Página individual do anúncio (galeria, JSON-LD/SEO, favoritos, produtos relacionados)
+- [x] Conexão OAuth do vendedor com o Mercado Pago (necessária para o split)
+- [x] Checkout: cria pedido + preferência de pagamento com `marketplace_fee` (comissão automática)
+- [x] Webhook do Mercado Pago: confirma pagamento, gera PIN/QR Code para retirada
+- [ ] Página de acompanhamento do pedido (`/pedidos/[id]`) — próximo
+- [ ] Envio via Correios/transportadora (cálculo de frete)
+
 ## Próximas fases (em construção, nesta ordem)
 
-3. **Checkout e pagamentos**: integração Mercado Pago Marketplace (split),
-   webhook de confirmação, geração de PIN/QR Code para retirada
 4. **Dashboards**: área do comprador (pedidos, favoritos, endereços) e
    dashboard do vendedor (produtos, estoque, faturamento, cupons)
 5. **Painel admin**: gestão de usuários/vendedores, aprovação de anúncios,
