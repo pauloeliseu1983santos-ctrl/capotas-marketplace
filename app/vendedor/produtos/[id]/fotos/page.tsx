@@ -1,6 +1,7 @@
 'use client';
 
-import { useState, useFormState, useFormStatus } from 'react-dom';
+import { useState } from 'react';
+import { useFormState, useFormStatus } from 'react-dom';
 import { useRouter } from 'next/navigation';
 import { enviarFotosProduto, finalizarAnuncio, type EstadoFotos } from './actions';
 
