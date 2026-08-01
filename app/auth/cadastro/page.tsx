@@ -43,4 +43,16 @@ export default function PaginaCadastro({
           type="submit"
           className="rounded-lg bg-brand-500 py-3 font-semibold text-white"
         >
+          Criar conta
+        </button>
+      </form>
 
+      <p className="mt-4 text-sm text-graphite-600">
+        Já tem conta?{' '}
+        <Link href="/auth/login" className="font-semibold text-brand-500">
+          Entrar
+        </Link>
+      </p>
+    </main>
+  );
+}
